@@ -1,60 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dibya Mishra | HR Portfolio</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
+font-family:'Poppins',sans-serif;
 margin:0;
-background:#f5f7fa;
+background:#f4f6fb;
 color:#333;
+scroll-behavior:smooth;
 }
 
-header{
-background:#1f3c88;
+/* NAVBAR */
+nav{
+background:#0b2545;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HERO SECTION */
+.hero{
+background:linear-gradient(120deg,#0b2545,#134074);
 color:white;
 text-align:center;
-padding:50px 20px;
+padding:80px 20px;
 }
 
-header h1{
-margin:0;
-font-size:36px;
-}
-
-section{
-background:white;
-margin:25px;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-h2{
-color:#1f3c88;
-}
-
-ul{
-line-height:1.8;
+.hero h1{
+font-size:42px;
+margin:10px;
 }
 
 .btn{
-background:#1f3c88;
-color:white;
-padding:10px 15px;
+background:white;
+color:#0b2545;
+padding:12px 18px;
+border-radius:6px;
 text-decoration:none;
-border-radius:5px;
+font-weight:bold;
 }
 
-footer{
-text-align:center;
+/* SECTIONS */
+section{
+max-width:1000px;
+margin:auto;
+background:white;
+margin-top:30px;
+padding:40px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+h2{
+color:#0b2545;
+}
+
+ul{
+line-height:1.9;
+}
+
+/* CARDS */
+.card{
+background:#f7f9fc;
 padding:20px;
-background:#1f3c88;
+margin-top:15px;
+border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+background:#0b2545;
 color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
 }
 
 </style>
@@ -62,113 +98,79 @@ color:white;
 
 <body>
 
-<header>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
 <h1>Dibya Mishra</h1>
 <p>HR Executive | Talent Acquisition | HR Operations</p>
-<p>Indore, Madhya Pradesh</p>
 
 <a class="btn" href="Dibya_Mishra_HR_Resume.pdf" target="_blank">
 Download Resume
 </a>
+</div>
 
-</header>
-
-<section>
+<section id="about">
 <h2>Professional Summary</h2>
 <p>
-HR Professional experienced in end-to-end recruitment,
-employee onboarding, HR operations, performance coordination,
-and employee engagement. MBA (HR & Finance) graduate with
-technical expertise enabling data-driven HR decision making
-and HR process automation.
+MBA HR professional with experience in recruitment,
+employee engagement, onboarding, HR operations and HRMS management.
+Strong technical background enabling data-driven HR
+decision-making and modern HR automation practices.
 </p>
 </section>
 
-<section>
+<section id="skills">
 <h2>Core HR Skills</h2>
 <ul>
 <li>End-to-End Recruitment</li>
 <li>Talent Acquisition</li>
 <li>Employee Lifecycle Management</li>
 <li>HR Operations & Compliance</li>
-<li>Onboarding & Offboarding</li>
-<li>Employee Engagement</li>
 <li>Payroll Coordination</li>
-<li>HR Analytics & Reporting</li>
+<li>HR Analytics</li>
+<li>Employee Engagement</li>
+<li>HRMS Management</li>
 </ul>
 </section>
 
-<section>
+<section id="experience">
 <h2>Professional Experience</h2>
 
+<div class="card">
 <h3>HR Executive — Velnik India</h3>
-<p>
-Managing recruitment lifecycle including sourcing,
-screening, interviewing and onboarding.
-Maintaining HRMS data and supporting appraisal cycles.
-</p>
+<p>Managing recruitment lifecycle, onboarding, HR operations and employee engagement initiatives.</p>
+</div>
 
+<div class="card">
 <h3>HR Assistant — Shivraj Enterprises</h3>
-<p>
-Supported hiring processes, employee engagement programs,
-HR documentation and reporting activities.
-</p>
+<p>Supported hiring, HR documentation and workforce engagement programs.</p>
+</div>
 
+<div class="card">
 <h3>HR Intern — Internship Studio</h3>
-<p>
-Assisted recruitment, onboarding and HRIS data management.
-</p>
+<p>Assisted recruitment coordination, onboarding and HRIS data management.</p>
+</div>
+
+<div class="card">
+<h3>Technical Advantage</h3>
+<p>Worked with HR teams in workforce automation and CRM-based employee systems at Persistent Systems and Cinetrix Infotech.</p>
+</div>
 
 </section>
 
-<section>
-<h2>Technical Advantage</h2>
-
-<h3>Lead Engineer — Persistent Systems</h3>
-<p>
-Collaborated with HR teams to develop workforce
-management systems and HR automation solutions.
-</p>
-
-<h3>Associate Consultant — Cinetrix Infotech</h3>
-<p>
-Developed enterprise applications supporting
-employee workflow and performance tracking.
-</p>
-
-</section>
-
-<section>
-<h2>HR Tools</h2>
-<ul>
-<li>Keka HRMS</li>
-<li>GreytHR</li>
-<li>PagarPay</li>
-<li>Stafflicity</li>
-<li>LinkedIn Recruiter</li>
-<li>ATS Platforms</li>
-<li>MS Excel</li>
-</ul>
-</section>
-
-<section>
+<section id="education">
 <h2>Education</h2>
 <p><b>MBA (HR & Finance)</b> — RKDF University</p>
 <p><b>B.E. Electronics & Telecommunications</b> — GGU University</p>
 </section>
 
-<section>
-<h2>Certifications</h2>
-<ul>
-<li>Human Resource Management</li>
-<li>HR Analytics</li>
-<li>ChatGPT in HR</li>
-<li>Advanced Excel</li>
-<li>Salesforce PD1</li>
-</ul>
-</section>
-
-<section>
+<section id="contact">
 <h2>Contact</h2>
 <p>Email: dibyamishra05031990@gmail.com</p>
 <p>Phone: +91 7987426346</p>
@@ -176,7 +178,7 @@ employee workflow and performance tracking.
 </section>
 
 <footer>
-<p>© 2026 Dibya Mishra | HR Portfolio</p>
+<p>© 2026 Dibya Mishra | Premium HR Portfolio</p>
 </footer>
 
 </body>
